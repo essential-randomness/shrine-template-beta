@@ -1,14 +1,149 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>A Shrine to my Blorbos – by Boba-tan</title>
+    <title>A Shrine to my favorite SexyMan – by Boba-tan</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>My blorbos</h1>
-    <div>Here's why they are the coolest.</div>
+    <!--Do your edits below-->
+    <header class="monster">
+      <h1>Welcme to Boba-tan's NAND Cypher Shrine</h1>
+    </header>
+    <!--Do your edits above-->
+    <main>
+      <div>
+        This shrine is dedicated to the very sexy NAND Cypher from fan-favorite
+        series Binary Calls.
+      </div>
+      <div class="character">
+        <h2>About NAND Cypher</h2>
+        <img src="./nand-cypher.png" />
+        <div>
+          <dl>
+            <dt>Name</dt>
+            <dd>NAND Cypher</dd>
+            <dt>Age</dt>
+            <dd>10,000 years old</dd>
+            <dt>First Appereance</dt>
+            <dd>Binary Calls Ep. 6 – Infinite Loop</dd>
+          </dl>
+        </div>
+      </div>
+      <div class="character">
+        <h2>About Human!NAND Cypher</h2>
+        <img src="./nand-cypher-human.png" />
+        <div>
+          <dl>
+            <dt>Name</dt>
+            <dd>NAND Cypher (human version)</dd>
+            <dt>Creator</dt>
+            <dd>Boba-tan</dd>
+            <dt>Notes</dt>
+            <dd>Original character do not steal</dd>
+          </dl>
+        </div>
+      </div>
+
+      <div>
+        <h2>About Binary Calls</h2>
+        <div>
+          First aired in 2012, award-winning series Binary Falls follows the
+          adventures of lovely twins Flipper and Babel Bytes as they work in
+          their uncle's computers repair shop.
+        </div>
+      </div>
+    </main>
+    <aside>
+      <details open>
+        <summary>What is a NAND Gate?</summary>
+        <div>
+          See <a href="https://en.wikipedia.org/wiki/NAND_gate">wikipedia</a>.
+        </div>
+      </details>
+      <details open>
+        <summary>What is a Funblr Sexyman?</summary>
+        <div>
+          While many definitions exist, we use the following definition. A
+          Funblr Sexyman must:
+        </div>
+        <ul>
+          <li>Be villanous, or at least "bad boy"-adjacent</li>
+          <li>Be exceedingly popular among Funblr fangirls</li>
+          <li>
+            Have a copious amount of fan-made gijinka (anthropomorphizations)
+          </li>
+          <li>Be often shipped with alternate versions of itself</li>
+          <li>Feature in many "x Reader" fanfics</li>
+        </ul>
+      </details>
+    </aside>
   </body>
+  <style>
+    body {
+      max-width: 800px;
+      margin: 0 auto;
+      padding-block: 20px;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      height: 150px;
+      margin-bottom: 10px;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    header:not(.human, .monster) {
+      background: transparent;
+    }
+    header.human {
+      background-image: url("./nand-header-human.png");
+      padding-left: 200px;
+    }
+    header.monster {
+      height: 100px;
+      padding-left: 200px;
+      background-image: url("./nand-header.png");
+    }
+    main {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+    .character {
+      display: grid;
+      grid-template-columns: 150px auto;
+      column-gap: 30px;
+    }
+
+    .character h2 {
+      grid-column: span 2;
+    }
+
+    .character img {
+      width: 100%;
+      height: auto;
+    }
+
+    dl {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    dt {
+      font-weight: bold;
+    }
+
+    aside {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      background-color: lightgray;
+      padding: 20px 30px;
+      border-radius: 20px;
+    }
+  </style>
 </html>
