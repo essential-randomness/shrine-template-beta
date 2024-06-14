@@ -1,0 +1,64 @@
+body {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-block: 20px;
+  background-color: var(--background-color);
+}
+header {
+  display: flex;
+  align-items: center;
+  height: 150px;
+  margin-bottom: 10px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+header:not(.human, .monster) {
+  background: transparent;
+}
+header.human {
+  background-image: url("./nand-header-human.png");
+  padding-left: 200px;
+}
+header.monster {
+  height: 100px;
+  padding-left: 200px;
+  background-image: url("./nand-header.png");
+}
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.character {
+  display: grid;
+  grid-template-columns: 150px auto;
+  column-gap: 30px;
+}
+
+.character h2 {
+  grid-column: span 2;
+}
+
+.character img {
+  width: 100%;
+  height: auto;
+}
+
+dl {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+dt {
+  font-weight: bold;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: lightgray;
+  padding: 20px 30px;
+  border-radius: 20px;
+}
